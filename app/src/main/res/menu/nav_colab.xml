@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/catalogoColab"
+        android:icon="@drawable/livros"
+        android:title="Catalogo"
+        />
+
+    <item
+        android:id="@+id/menuRua"
+        android:icon="@drawable/estrada"
+        android:title="Rua"
+        />
+
+    <item
+        android:id="@+id/menuAtrasado"
+        android:icon="@drawable/atrasado"
+        android:title="Atrasados"
+        />
+
+    <item
+        android:id="@+id/euColab"
+        android:icon="@drawable/usuario"
+        android:title="EU"
+        />
+
+</menu>

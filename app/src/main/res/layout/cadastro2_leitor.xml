@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#656565"
+    tools:context=".Activity.Cadastro2Leitor">
+
+    <Button
+        android:id="@+id/btnFinalizarLeitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:backgroundTint="#F4511E"
+        android:text="Finalizar"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inputNumero"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Numero"
+        android:inputType="number"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/inputBairro"
+        app:layout_constraintTop_toBottomOf="@+id/inputEstado" />
+
+    <EditText
+        android:id="@+id/inputEstado"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Estado"
+        android:inputType="textPersonName"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/inputCidade"
+        app:layout_constraintTop_toBottomOf="@+id/inputLog" />
+
+    <ImageButton
+        android:id="@+id/btnVoltarCad2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#00FFFFFF"
+        android:clickable="true"
+        android:contentDescription="Voltar"
+        android:src="?attr/actionModeCloseDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#F4511E" />
+
+    <EditText
+        android:id="@+id/inputCep"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="208dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Cep"
+        android:inputType="number"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEsqueCep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Esqueci meu CEP"
+        android:textColor="#F4511E"
+        android:textColorLink="#5E35B1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/inputLog"
+        app:layout_constraintStart_toEndOf="@+id/inputCep" />
+
+    <EditText
+        android:id="@+id/inputLog"
+        android:layout_width="301dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Logradouro"
+        android:inputType="textPersonName"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCep" />
+
+    <EditText
+        android:id="@+id/inputBairro"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Bairro"
+        android:inputType="textPersonName"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/inputNumero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputCidade" />
+
+    <EditText
+        android:id="@+id/inputCidade"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#F4511E"
+        android:ems="10"
+        android:hint="Cidade"
+        android:inputType="textPersonName"
+        android:textColor="#F4511E"
+        android:textColorHint="#F4511E"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/inputEstado"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLog" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

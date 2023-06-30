@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/meus_livros"
+        android:icon="@drawable/livroaberto"
+        android:title="Meus Livros" />
+
+    <item
+        android:id="@+id/catalogo"
+        android:icon="@drawable/livros"
+        android:title="Catalogo" />
+
+    <item
+        android:id="@+id/usuario"
+        android:icon="@drawable/usuario"
+        android:title="Eu" />
+
+</menu>
